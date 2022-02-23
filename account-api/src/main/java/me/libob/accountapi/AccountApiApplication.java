@@ -1,4 +1,4 @@
-package me.libob.accountserver;
+package me.libob.accountapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

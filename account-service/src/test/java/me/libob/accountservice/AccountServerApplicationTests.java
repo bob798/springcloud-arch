@@ -1,4 +1,4 @@
-package me.libob.accountserver;
+package me.libob.accountservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

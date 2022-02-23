@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: accountservice
+          uri: lb://accountservice
+          predicates:
+            -Path=/user/**
