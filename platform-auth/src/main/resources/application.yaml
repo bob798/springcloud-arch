@@ -1,0 +1,9 @@
+
+spring:
+  cloud:
+      discovery:
+        server-addr: 172.16.234.135:8848
+  application:
+    name: platform-auth
+server:
+  port: 8082

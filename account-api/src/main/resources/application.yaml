@@ -1,0 +1,10 @@
+
+spring:
+  cloud:
+      discovery:
+        server-addr: 172.16.234.135:8848
+
+  application:
+    name: account-api
+server:
+  port: 8081
