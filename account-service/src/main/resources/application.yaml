@@ -1,7 +1,0 @@
-spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://bob.oss.link:3306/iot?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
-    username: root
-    password: v5rNC30HQTjeGpA4jCZc
-    driver-class-name: com.mysql.cj.jdbc.Driver
