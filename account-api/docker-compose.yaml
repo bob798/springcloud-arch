@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  auth-service:
+    image: account-api
+    container_name: account-api
+    restart: always
+    networks:
+      - libob
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - liboblogs:/javarun/logs
+    ports:
+      - "8081:8081"
+volumes:
+  liboblogs:
+    external: true
+networks:
+  btf:
+    name: libob
