@@ -1,9 +1,28 @@
-
 spring:
   cloud:
+    nacos:
       discovery:
-        server-addr: 172.16.234.135:8848
+        server-addr: 172.16.0.130:8848
   application:
     name: platform-auth
 server:
   port: 8082
+feign:
+  client:
+    config:
+      accountapi:
+        loggerLevel: FULL
+        connectTimeout: 1000
+        readTimeout: 1000
+# spring boot debug level log
+logging:
+  level:
+    root: debug
+
+ribbon:
+  ConnectTimeout: 1000  #毫秒    连接超时时间
+  ReadTimeout: 1000     #毫秒      逻辑处理超时时间
+  OkToRetryOnAllOperations: true    # 是否对所有操作都进行重试
+  MaxAutoRetries: 2     # 对当前实例的最大重试次数(请求服务超时6s则会再请求一次)
+  MaxAutoRetriesNextServer: 1     # 切换实例的最大重试次数(如果还失败就切换下
+

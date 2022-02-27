@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>account-service</artifactId>
+    <artifactId>platform-auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>account-service</name>
     <description>account-service</description>

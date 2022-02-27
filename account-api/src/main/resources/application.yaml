@@ -1,10 +1,10 @@
 
 spring:
   cloud:
+    nacos:
       discovery:
-        server-addr: 172.16.234.135:8848
-
+        server-addr: 172.16.0.130:8848
   application:
-    name: account-api
+    name: accountapi
 server:
   port: 8081
